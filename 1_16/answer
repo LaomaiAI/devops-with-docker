@@ -1,0 +1,3 @@
+https://devops-docker-backend.onrender.com/ping
+
+The application is the Go example backend from exercise 1.13, deployed as a Docker container on Renders free tier. It is running as a Web Service in the cloud, using the public Docker Hub image laomaiai/example-backend:latest. The server listens on the PORT environment variable provided by Render, and GET /ping returns pong.

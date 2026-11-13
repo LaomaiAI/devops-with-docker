@@ -1,0 +1,5 @@
+CONTAINER ID   IMAGE                                      COMMAND                  CREATED          STATUS                        PORTS     NAMES
+2e37309f6338   devopsdockeruh/pull_exercise               "node index.js"          33 minutes ago   Exited (0) 30 minutes ago               boring_cerf
+4d76bd279f67   devopsdockeruh/simple-web-service:alpine   "/usr/src/app/server"    35 minutes ago   Exited (2) 33 minutes ago               ex15
+003ca995f090   ubuntu:22.04                               "sh -c 'while true; …"   47 minutes ago   Exited (137) 38 minutes ago             ex14
+13309d3955e7   devopsdockeruh/simple-web-service:ubuntu   "/usr/src/app/server"    52 minutes ago   Exited (2) 48 minutes ago               ex13

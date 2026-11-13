@@ -1,0 +1,3 @@
+IMAGE                                      ID             DISK USAGE   CONTENT SIZE   EXTRA
+devopsdockeruh/simple-web-service:alpine   dd4d367476f8       24.3MB         7.93MB        
+devopsdockeruh/simple-web-service:ubuntu   d44e1dce3987        126MB         33.7MB   U    

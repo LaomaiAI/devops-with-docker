@@ -1,0 +1,7 @@
+FROM golang:1.16
+WORKDIR /usr/src/app
+COPY 1_13 .
+ENV REQUEST_ORIGIN=http://localhost:5001
+RUN go build -o server .
+EXPOSE 8080
+CMD ["./server"]

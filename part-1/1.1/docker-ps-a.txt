@@ -1,0 +1,7 @@
+CONTAINER ID   IMAGE                                      COMMAND                  CREATED          STATUS                        PORTS     NAMES
+82421954c827   nginx                                      "/docker-entrypoint.…"   36 seconds ago   Exited (0) 25 seconds ago               ex11-b
+1cfc9c7e2df2   nginx                                      "/docker-entrypoint.…"   2 minutes ago    Up 2 minutes                  80/tcp    ex11-a
+2e37309f6338   devopsdockeruh/pull_exercise               "node index.js"          31 minutes ago   Exited (0) 29 minutes ago               boring_cerf
+4d76bd279f67   devopsdockeruh/simple-web-service:alpine   "/usr/src/app/server"    34 minutes ago   Exited (2) 32 minutes ago               ex15
+003ca995f090   ubuntu:22.04                               "sh -c 'while true; …"   46 minutes ago   Exited (137) 37 minutes ago             ex14
+13309d3955e7   devopsdockeruh/simple-web-service:ubuntu   "/usr/src/app/server"    51 minutes ago   Exited (2) 47 minutes ago               ex13

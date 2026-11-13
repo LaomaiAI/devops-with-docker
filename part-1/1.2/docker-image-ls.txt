@@ -1,0 +1,5 @@
+IMAGE                                      ID             DISK USAGE   CONTENT SIZE   EXTRA
+devopsdockeruh/pull_exercise:latest        7c0635934049        118MB         25.7MB   U    
+devopsdockeruh/simple-web-service:alpine   dd4d367476f8       24.3MB         7.93MB   U    
+devopsdockeruh/simple-web-service:ubuntu   d44e1dce3987        126MB         33.7MB   U    
+ubuntu:22.04                               74b12b11ffa5        120MB         32.1MB   U    

@@ -1,0 +1,4 @@
+docker build -t frontend-1-14 -f Dockerfile.frontend ..
+docker build -t backend-1-14 -f Dockerfile.backend ..
+docker run -d -p 5001:5001 frontend-1-14
+docker run -d -p 8080:8080 backend-1-14
