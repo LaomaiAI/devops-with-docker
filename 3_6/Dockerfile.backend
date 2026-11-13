@@ -1,0 +1,8 @@
+FROM golang:1.16
+WORKDIR /usr/src/app
+ENV REQUEST_ORIGIN=http://localhost:5001
+COPY code/example-backend .
+RUN go build -o server . && useradd -m appuser && chown -R appuser:appuser /usr/src/app && rm -rf /root/.cache/go-build /root/go/pkg/mod/cache/download
+USER appuser
+EXPOSE 8080
+CMD ["./server"]

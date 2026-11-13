@@ -1,0 +1,8 @@
+FROM golang:1.24-alpine
+WORKDIR /usr/src/app
+ENV REQUEST_ORIGIN=http://localhost:5001
+COPY code/example-backend .
+RUN go build -o server . && adduser -D appuser && chown -R appuser:appuser /usr/src/app
+USER appuser
+EXPOSE 8080
+CMD ["./server"]

@@ -1,0 +1,28 @@
+name: Deploy backend to Render
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'example-app/backend/**'
+      - '.github/workflows/deploy-render.yml'
+
+jobs:
+  build-push-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+      - name: Log in to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+      - name: Build and push the backend image
+        uses: docker/build-push-action@v6
+        with:
+          context: example-app/backend
+          push: true
+          tags: laomaiai/example-backend:latest
+      - name: Trigger the Render deploy hook
+        run: curl --fail --silent --show-error -X POST "${{ secrets.RENDER_DEPLOY_HOOK_URL }}"
