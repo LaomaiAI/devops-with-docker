@@ -84,3 +84,4 @@ bash tests/run_all_part2.sh
 
 - 2.5 的 scaling-exercise 不在本科目錄內提交（按練習要求只在平台交回所用命令），已停止相關容器。
 - 首次啟動後端時若資料庫未就緒，後端只會在程序啟動後的首次 Postgres 初始化時重試；更換資料庫後請重啟後端容器。
+- example-app 內的 `.gitignore` 會隱藏 Dockerfile（範本為免洩漏答案而設）；兩份 Dockerfile 已用 `git add -f` 強制加入倉庫，否則 CI 無法建置。
